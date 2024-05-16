@@ -1,3 +1,4 @@
+//!Palindroma
 const userWord = prompt('Scrivi una parola');
 
 function palindromo(parola) {
@@ -42,7 +43,7 @@ function palindromo(parola) {
 
     /* console.log(portionBreversed) */
 
-    if (portionA = portionBreversed) {
+    if (portionA == portionBreversed) {
         console.log('Parola Palindroma!!!', portionA, portionBreversed)
     }
 
@@ -52,3 +53,24 @@ function palindromo(parola) {
 }
 
 palindromo(userWord)
+
+//! Pari e Dispari
+
+let sceltaUtenteRaw = prompt('Scegli Pari o Dispari?');
+
+let sceltaUtente = sceltaUtenteRaw.toLowerCase();
+
+while (sceltaUtente !== 'pari' && sceltaUtente !== 'dispari') {
+    sceltaUtenteRaw = prompt('Scegli Pari o Dispari?');
+    sceltaUtente = sceltaUtenteRaw.toLowerCase()
+}
+
+let numeroUtente = Number.parseInt(prompt('Scrivi un numero da 1 a 5'), 10);
+
+while  (numeroUtente < 1 || numeroUtente > 5) {
+    numeroUtente = Number.parseInt(prompt('Scrivi un numero da 1 a 5'), 10);
+}
+
+
+
+
