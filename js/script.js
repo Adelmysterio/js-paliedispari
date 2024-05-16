@@ -65,14 +65,43 @@ let sceltaUtente = sceltaUtenteRaw.toLowerCase();
 while (sceltaUtente !== 'pari' && sceltaUtente !== 'dispari') {
     sceltaUtenteRaw = prompt('Scegli Pari o Dispari?');
     sceltaUtente = sceltaUtenteRaw.toLowerCase()
-}
+};
 
 let numeroUtente = Number.parseInt(prompt('Scrivi un numero da 1 a 5'), 10);
 
-while  (numeroUtente < 1 || numeroUtente > 5) {
+while (numeroUtente < 1 || numeroUtente > 5) {
     numeroUtente = Number.parseInt(prompt('Scrivi un numero da 1 a 5'), 10);
+};
+
+console.log('Utente ', numeroUtente);
+
+function getRandomNumber (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+let numeroComputer = getRandomNumber (1, 5);
+
+console.log('Computer ', numeroComputer);
+
+function somma (primoNumero, secondoNumero) {
+    return primoNumero + secondoNumero
+};
+
+let sommaNumeri = somma (numeroUtente, numeroComputer);
+
+console.log ('La somma dei numeri corrisponde a', sommaNumeri);
+
+if (sommaNumeri % 2 == 0) {
+    sommaNumeri = 'pari'
+} 
+
+else {
+    sommaNumeri = 'dispari'
+};
+
+if (sceltaUtente === sommaNumeri) {
+    console.log ('Hai Vinto!!! La tua scelta era',sceltaUtente)
 }
-
-
-
-
+else {
+    console.log ('Hai Perso... La tua scelta era',sceltaUtente)
+};
