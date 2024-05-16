@@ -18,19 +18,21 @@ function palindromo(parola) {
 
     else {
         let metaLunghezza = parola.length / 2 - 0.5;
+        let portionBtemp = ''
         for (let i = 0; i < parola.length; i++) {
             if (i < metaLunghezza) {
                 portionA += parola[i]
             }
             else {
-                portionB += parola[i]
+                portionBtemp += parola[i]
             }
         };
 
-        /*  for (let i = 1; i < portionB.length; i++){
-            portionB += portionB[i]
-        } */
-        portionB = portionB.slice(1, portionB.length);
+        for (let i = 1; i < portionBtemp.length; i++){
+            portionB += portionBtemp[i]
+        }
+
+        /* portionB = portionB.slice(1, portionB.length); */
 
     }
 
