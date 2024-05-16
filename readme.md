@@ -32,3 +32,35 @@ creo una funzione con un argomento parola
 
     se portionaA=portionBreversed allora la parola e' palindroma
     altrimenti no
+
+<!--//! Pari e Dispari
+L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+Dichiariamo chi ha vinto. -->
+dichiaro la variabile sceltaUtente con un prompt che faccia scegliere Pari o dispari
+imposto un controllo sul prompt
+
+
+dichiaro la variabile numeroUtente con un prompt Scrivi un numero da uno a 5 
+Imposto un controllo sul prompt
+
+creo una funzione getRandomNumber che generi un numero random con un min e max 
+
+dichiaro una variabile numeroComputer che invoca la funzione getRandomNumber con min 1 e max 5
+
+creo una funzione somma con argomenti (primoNumero, secondoNumero) che restituisca la somma dei 2 argomenti
+
+creo una variabile sommaNumeri che invoca la funzione somma con argomenti numeroUtente numeroComputer
+
+se sommaNumeri % 2 = 0 allora sommaNumeri='pari'
+altrimenti sommaNumeri='dispari'
+
+se sceltaUtente === sommaNumeri allora stampa HAI VINTO
+altrimenti stampa HAI PERSO
+
+
+
+
+
+
