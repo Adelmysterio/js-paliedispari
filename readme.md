@@ -15,11 +15,14 @@ creo una funzione con un argomento parola
         se indice del ciclo <= metaLunghezza allora portionA = ai caratteri della parola fino a indice <= metalunghezza
         altrimenti portionB = ai caratteri della fino a indice > metalunghezza
 
+    se la lunghezza della parola e' dispari
+        dichiaro metaLunghezza = (parola.length / 2) - 1
+        creo un ciclo for scorra i caratteri della parola
+        se indice del ciclo <= metaLunghezza allora portionA = ai caratteri della parola fino a indice <= metalunghezza
+        altrimenti portionB = ai caratteri della fino a indice > metalunghezza
 
-    altrimenti
-        allora divido la parola in 2 parti escludendo il carattere al centro portionA e portionB
-        inizializzo una variabile che in futuro conterra portionB scritta al contraio portionBreversed
-        creo un ciclo for che legga e riscriva al contrario i caratteri di portionB e salvando il risultato in portionB
+
+    
     
     inizializzo portionBreversed
 
