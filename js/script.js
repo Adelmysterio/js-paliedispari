@@ -91,15 +91,19 @@ let sommaNumeri = somma (numeroUtente, numeroComputer);
 
 console.log ('La somma dei numeri corrisponde a', sommaNumeri);
 
-if (sommaNumeri % 2 == 0) {
-    sommaNumeri = 'pari'
+function pariOdispari (numero) {
+if (numero % 2 == 0) {
+    numero = 'pari'
 } 
 
 else {
-    sommaNumeri = 'dispari'
+    numero = 'dispari'
 };
+}
 
-if (sceltaUtente === sommaNumeri) {
+let risultato = pariOdispari (sommaNumeri)
+
+if (sceltaUtente === risultato) {
     console.log ('Hai Vinto!!! La tua scelta era',sceltaUtente)
 }
 else {
